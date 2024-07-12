@@ -91,110 +91,110 @@ SERVIDOR: tabela que armazena as informações do SERVIDOR.
 ![Alt text](https://github.com/user-attachments/assets/28f341e8-ab3c-4867-9ac1-0053c2a86f98 "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
-      
-DROP TABLE IF EXISTS ALUNO;
-CREATE TABLE ALUNO (
-    id int PRIMARY KEY,
-    cpf varchar(150),
-    matricula varchar(150),
-    nome varchar(150),
-    status varchar(150),
-    FK_AGENTE_id int,
-    FK_EMPRESA_id int,
-    FK_ORIENTADOR_id int
-);
-DROP TABLE IF EXISTS EMPRESA;
-CREATE TABLE EMPRESA (
-    id int PRIMARY KEY,
-    cnpj varchar(150),
-    nome varchar(150)
-);
 
-DROP TABLE IF EXISTS AGENTE;
-CREATE TABLE AGENTE (
-    id int PRIMARY KEY,
-    nome varchar(150),
-    cpf varchar(150),
-    FK_EMPRESA_id int
-);
-
-DROP TABLE IF EXISTS CHAMADO;
-CREATE TABLE CHAMADO (
-    id int PRIMARY KEY,
-    desc varchar(150),
-    status varchar(150),
-    dt_abertura timestamp,
-    dt_fechamento timestamp,
-    FK_ALUNO_id int,
-    FK_SERVIDOR_id int
-);
-
-DROP TABLE IF EXISTS SERVIDOR;
-CREATE TABLE SERVIDOR (
-    cpf varchar(150),
-    id int PRIMARY KEY,
-    nome varchar(150),
-    matricula varchar(150)
-);
-
-DROP TABLE IF EXISTS ORIENTADOR;
-CREATE TABLE ORIENTADOR (
-    matricula varchar(150),
-    cpf varchar(150),
-    id int PRIMARY KEY,
-    nome varchar(150)
-);
- 
-ALTER TABLE ALUNO ADD CONSTRAINT FK_ALUNO_1
-    FOREIGN KEY (FK_AGENTE_id)
-    REFERENCES AGENTE (id)
-    ON DELETE SET NULL;
- 
-ALTER TABLE ALUNO ADD CONSTRAINT FK_ALUNO_2
-    FOREIGN KEY (FK_EMPRESA_id)
-    REFERENCES EMPRESA (id)
-    ON DELETE SET NULL;
- 
-ALTER TABLE ALUNO ADD CONSTRAINT FK_ALUNO_3
-    FOREIGN KEY (FK_ORIENTADOR_id)
-    REFERENCES ORIENTADOR (id)
-    ON DELETE SET NULL;
- 
-ALTER TABLE AGENTE ADD CONSTRAINT FK_AGENTE_1
-    FOREIGN KEY (FK_EMPRESA_id)
-    REFERENCES EMPRESA (id)
-    ON DELETE CASCADE;
- 
-ALTER TABLE CHAMADO ADD CONSTRAINT FK_CHAMADO_1
-    FOREIGN KEY (FK_ALUNO_id)
-    REFERENCES ALUNO (id)
-    ON DELETE CASCADE;
- 
-ALTER TABLE CHAMADO ADD CONSTRAINT FK_CHAMADO_2
-    FOREIGN KEY (FK_SERVIDOR_id)
-    REFERENCES SERVIDOR (id)
-    ON DELETE CASCADE;
+	DROP TABLE IF EXISTS ALUNO;
+	CREATE TABLE ALUNO (
+	    id int PRIMARY KEY,
+	    cpf varchar(150),
+	    matricula varchar(150),
+	    nome varchar(150),
+	    status varchar(150),
+	    FK_AGENTE_id int,
+	    FK_EMPRESA_id int,
+	    FK_ORIENTADOR_id int
+	);
+	DROP TABLE IF EXISTS EMPRESA;
+	CREATE TABLE EMPRESA (
+	    id int PRIMARY KEY,
+	    cnpj varchar(150),
+	    nome varchar(150)
+	);
+	
+	DROP TABLE IF EXISTS AGENTE;
+	CREATE TABLE AGENTE (
+	    id int PRIMARY KEY,
+	    nome varchar(150),
+	    cpf varchar(150),
+	    FK_EMPRESA_id int
+	);
+	
+	DROP TABLE IF EXISTS CHAMADO;
+	CREATE TABLE CHAMADO (
+	    id int PRIMARY KEY,
+	    desc varchar(150),
+	    status varchar(150),
+	    dt_abertura timestamp,
+	    dt_fechamento timestamp,
+	    FK_ALUNO_id int,
+	    FK_SERVIDOR_id int
+	);
+	
+	DROP TABLE IF EXISTS SERVIDOR;
+	CREATE TABLE SERVIDOR (
+	    cpf varchar(150),
+	    id int PRIMARY KEY,
+	    nome varchar(150),
+	    matricula varchar(150)
+	);
+	
+	DROP TABLE IF EXISTS ORIENTADOR;
+	CREATE TABLE ORIENTADOR (
+	    matricula varchar(150),
+	    cpf varchar(150),
+	    id int PRIMARY KEY,
+	    nome varchar(150)
+	);
+	 
+	ALTER TABLE ALUNO ADD CONSTRAINT FK_ALUNO_1
+	    FOREIGN KEY (FK_AGENTE_id)
+	    REFERENCES AGENTE (id)
+	    ON DELETE SET NULL;
+	 
+	ALTER TABLE ALUNO ADD CONSTRAINT FK_ALUNO_2
+	    FOREIGN KEY (FK_EMPRESA_id)
+	    REFERENCES EMPRESA (id)
+	    ON DELETE SET NULL;
+	 
+	ALTER TABLE ALUNO ADD CONSTRAINT FK_ALUNO_3
+	    FOREIGN KEY (FK_ORIENTADOR_id)
+	    REFERENCES ORIENTADOR (id)
+	    ON DELETE SET NULL;
+	 
+	ALTER TABLE AGENTE ADD CONSTRAINT FK_AGENTE_1
+	    FOREIGN KEY (FK_EMPRESA_id)
+	    REFERENCES EMPRESA (id)
+	    ON DELETE CASCADE;
+	 
+	ALTER TABLE CHAMADO ADD CONSTRAINT FK_CHAMADO_1
+	    FOREIGN KEY (FK_ALUNO_id)
+	    REFERENCES ALUNO (id)
+	    ON DELETE CASCADE;
+	 
+	ALTER TABLE CHAMADO ADD CONSTRAINT FK_CHAMADO_2
+	    FOREIGN KEY (FK_SERVIDOR_id)
+	    REFERENCES SERVIDOR (id)
+	    ON DELETE CASCADE;
 
 
       
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        -- Inserts para a tabela ALUNO
-INSERT INTO ALUNO (id, cpf, matricula, nome, status, FK_AGENTE_id, FK_EMPRESA_id, FK_ORIENTADOR_id) VALUES (1, '123.456.789-01', '2022001', 'Ana Silva', 'Ativo', 1, 1, 1), (2, '234.567.890-02', '2022002', 'Bruno Costa', 'Ativo', 2, 2, 2), (3, '345.678.901-03', '2022003', 'Carlos Oliveira', 'Inativo', 3, 3, 3), (4, '456.789.012-04', '2022004', 'Daniela Pereira', 'Ativo', 4, 4, 4), (5, '567.890.123-05', '2022005', 'Eduardo Santos', 'Ativo', 5, 5, 5);
+	-- Inserts para a tabela ALUNO
+	INSERT INTO ALUNO (id, cpf, matricula, nome, status, FK_AGENTE_id, FK_EMPRESA_id, FK_ORIENTADOR_id) VALUES (1, '123.456.789-01', '2022001', 'Ana Silva', 'Ativo', 1, 1, 1), (2, '234.567.890-02', '2022002', 'Bruno Costa', 'Ativo', 2, 2, 2), (3, '345.678.901-03', '2022003', 'Carlos Oliveira', 'Inativo', 3, 3, 3), (4, '456.789.012-04', '2022004', 'Daniela Pereira', 'Ativo', 4, 4, 4), (5, '567.890.123-05', '2022005', 'Eduardo Santos', 'Ativo', 5, 5, 5);
 
 	-- Inserts para a tabela EMPRESA
-INSERT INTO EMPRESA (id, cnpj, nome) VALUES (1, '12.345.678/0001-01', 'Empresa A'), (2, '23.456.789/0001-02', 'Empresa B'), (3, '34.567.890/0001-03', 'Empresa C'), (4, '45.678.901/0001-04', 'Empresa D'), (5, '56.789.012/0001-05', 'Empresa E');
+	INSERT INTO EMPRESA (id, cnpj, nome) VALUES (1, '12.345.678/0001-01', 'Empresa A'), (2, '23.456.789/0001-02', 'Empresa B'), (3, '34.567.890/0001-03', 'Empresa C'), (4, '45.678.901/0001-04', 'Empresa D'), (5, '56.789.012/0001-05', 'Empresa E');
 
 	-- Inserts para a tabela AGENTE
-INSERT INTO AGENTE (id, nome, cpf, FK_EMPRESA_id) VALUES (1, 'João Agente', '789.012.345-67', 1), (2, 'Maria Agente', '890.123.456-78', 2), (3, 'Pedro Agente', '901.234.567-89', 3), (4, 'Paula Agente', '012.345.678-90', 4), (5, 'Lucas Agente', '123.456.789-01', 5);
+	INSERT INTO AGENTE (id, nome, cpf, FK_EMPRESA_id) VALUES (1, 'João Agente', '789.012.345-67', 1), (2, 'Maria Agente', '890.123.456-78', 2), (3, 'Pedro Agente', '901.234.567-89', 3), (4, 'Paula Agente', '012.345.678-90', 4), (5, 'Lucas Agente', '123.456.789-01', 5);
 
 	-- Inserts para a tabela CHAMADO
-INSERT INTO CHAMADO (id, descricao, status, dt_abertura, dt_fechamento, FK_ALUNO_id, FK_SERVIDOR_id) VALUES (1, 'Problema na matrícula', 'Aberto', '2023-07-01 10:00:00', NULL, 1, 1), (2, 'Dúvida sobre estágio', 'Fechado', '2023-07-02 11:00:00', '2023-07-03 12:00:00', 2, 2), (3, 'Solicitação de documentos', 'Aberto', '2023-07-03 12:00:00', NULL, 3, 3), (4, 'Erro no sistema', 'Fechado', '2023-07-04 13:00:00', '2023-07-05 14:00:00', 4, 4), (5, 'Atualização de dados', 'Aberto', '2023-07-05 14:00:00', NULL, 5, 5);
+	INSERT INTO CHAMADO (id, descricao, status, dt_abertura, dt_fechamento, FK_ALUNO_id, FK_SERVIDOR_id) VALUES (1, 'Problema na matrícula', 'Aberto', '2023-07-01 10:00:00', NULL, 1, 1), (2, 'Dúvida sobre estágio', 'Fechado', '2023-07-02 11:00:00', '2023-07-03 12:00:00', 2, 2), (3, 'Solicitação de documentos', 'Aberto', '2023-07-03 12:00:00', NULL, 3, 3), (4, 'Erro no sistema', 'Fechado', '2023-07-04 13:00:00', '2023-07-05 14:00:00', 4, 4), (5, 'Atualização de dados', 'Aberto', '2023-07-05 14:00:00', NULL, 5, 5);
 
 	-- Inserts para a tabela SERVIDOR
-INSERT INTO SERVIDOR (id, cpf, nome, matricula) VALUES (1, '678.901.234-56', 'Servidor 1', 'S001'), (2, '789.012.345-67', 'Servidor 2', 'S002'), (3, '890.123.456-78', 'Servidor 3', 'S003'), (4, '901.234.567-89', 'Servidor 4', 'S004'), (5, '012.345.678-90', 'Servidor 5', 'S005');
+	INSERT INTO SERVIDOR (id, cpf, nome, matricula) VALUES (1, '678.901.234-56', 'Servidor 1', 'S001'), (2, '789.012.345-67', 'Servidor 2', 'S002'), (3, '890.123.456-78', 'Servidor 3', 'S003'), (4, '901.234.567-89', 'Servidor 4', 'S004'), (5, '012.345.678-90', 'Servidor 5', 'S005');
 
 	-- Inserts para a tabela ORIENTADOR
-INSERT INTO ORIENTADOR (id, cpf, nome, matricula) VALUES (1, '456.789.012-34', 'Orientador 1', 'O001'), (2, '567.890.123-45', 'Orientador 2', 'O002'), (3, '678.901.234-56', 'Orientador 3', 'O003'), (4, '789.012.345-67', 'Orientador 4', 'O004'), (5, '890.123.456-78', 'Orientador 5', 'O005');
+	INSERT INTO ORIENTADOR (id, cpf, nome, matricula) VALUES (1, '456.789.012-34', 'Orientador 1', 'O001'), (2, '567.890.123-45', 'Orientador 2', 'O002'), (3, '678.901.234-56', 'Orientador 3', 'O003'), (4, '789.012.345-67', 'Orientador 4', 'O004'), (5, '890.123.456-78', 'Orientador 5', 'O005');
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>

@@ -1,38 +1,27 @@
-# TRABALHO 01:  Título do Trabalho
+# TRABALHO 01:  REC
 Trabalho desenvolvido durante a disciplina de BD1
 
 # Sumário
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
-...<br>
-
+Caio Lessa Simão: caiolessa02@gmail.com<br>
+Davidson Santos: email_segundo_componente@dominio.com<br>
+Marcos Vinicius: email_segundo_componente@dominio.com<br>
+Thiago Borges: thiagoborges980@gmail.com<br>
 
 ### 2.MINI-MUNDO<br>
 
-Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar) <br>
-Entrevista com o usuário e identificação dos requisitos.(quando for o caso de sistemas com cliente  real)<br>
-Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
-cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
-gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
-
-> O sistema proposto para a "Devcom Projetos conterá as informacões aqui detalhadas. Dos Projetos serão armazenados o número, nome e cidade. Dos Departamentos serão armazenados o número e nome. O cliente destacou que cada projeto pode ter vários departamentos auxiliando no seu desenvolvimento, e cada departamento pode estar envolvido em vários projetos. Os dados relativos aos empregados que serão armazenados são: rg, nome, cpf, salário, data inicial do salario e supervisor de cada empregado. É importante destacar que cada empregado pode ser supervisionado por outro empregado, e obrigatoriamente deve estar alocado a um único departamento, mas pode gerenciar vários departamentos ou não gerenciar nenhum. Um empregado também pode participar de vários projetos, caso seja necessário, mas não precisa obrigatoriamente estar alocado em algum projeto. Com relação aos dependentes serão armazenadas as informações de nome do dependente, data de nascimento, sexo e grau de parentesco. Cada empregado pode ter vários dependentes, mas um dependente esta associado apenas a um único empregado. Com relação ao histórico de salário devemos armazenar as informações de valor do salário, data de início do salário no período e data final do salário no período. É importante lembrar que cada funcionario pode ter diversos eventos de histórico de salário associados a ele visto que este dado pode ser alterado várias vezes. 
+O sistema proposto para a “REC” conterá as informações aqui detalhadas. Do Aluno se armazena o seu CPF, matrícula, nome, e status empregatício. De uma Empresa são coletados o CNPJ e nome. Um aluno pode estar estagiando em uma empresa, e cada empresa pode estagiar vários alunos. Os dados relativos ao Agente Integrador envolvem a presença de um CPF e nome. Um aluno pode ser assessorado por um agente, e um agente é empregado por uma empresa que pode possuir vários agentes. Um orientador é atribuído a alunos, do Orientador é registrado o CPF, matrícula e nome. O aluno possui apenas um orientador. Um aluno pode abrir chamados, de um Chamado registra-se a sua descrição e status de atendimento por um servidor. Do Servidor, armazena-se informações relativas ao seu CPF, matrícula e nome. Um servidor pode ser atribuído a vários chamados.
 
 ### 3.PERGUNTAS A SEREM RESPONDIDAS<br>
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que mostre o nome de cada supervisor(a) e a quantidade de empregados supervisionados.
-* Relatório relativo aos os supervisores e supervisionados. O resultado deve conter o nome do supervisor e nome do supervisionado além da quantidade total de horas que cada supervisionado tem alocada aos projetos existentes na empresa.
-* Relatorio que mostre para cada linha obtida o nome do departamento, o valor individual de cada salario existente no  departamento e a média geral de salarios dentre todos os empregados. Os resultados devem ser apresentados ordenados por departamento.
-* Relatório que mostre as informações relacionadas a todos empregados de empresa (sem excluir ninguém). As linhas resultantes devem conter informações sobre: rg, nome, salario do empregado, data de início do salario atual, nomes dos projetos que participa, quantidade de horas e localização nos referidos projetos, numero e nome dos departamentos aos quais está alocado, informações do historico de salário como inicio, fim, e valores de salarios antigos que foram inclusos na referida tabela (caso possuam informações na mesma), além de todas informações relativas aos dependentes. 
->> ##### Observações: <br> a) perceba que este relatório pode conter linhas com alguns dados repetidos (mas não todos). <br>  b) para os empregados que não possuirem alguma destas informações o valor no registro deve aparecer sem informação/nulo.  <br>  c) Observe que para entregar os relatórios propostos, todos os atributos necessários nos relatórios deverão existir ou derivar de atributos existentes.
-* Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa. 
-
+    Relatório que mostre os chamados em aberto por dado aluno;
+    Relatório que apresente as empresas que mais contratam estagiários do Campus;
+    Relatório relativo aos orientadores e alunos. O resultado deve exibir o nome do orientador e o nome do aluno supervisado;
+    Relatório que apresente os chamados aprovados no último mês;
+    Relatório relativo aos alunos e empresas. O resultado deve exibir o nome e matrícula do aluno, junto de informações relativas à empresa que o emprega (Considerar apenas alunos que 
+    estão trabalhando).
     
 ### 5.MODELO CONCEITUAL<br>
     A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
@@ -48,15 +37,49 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
     
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
+    [Grupo01]: Ana Júlia Caetano, Jéssica Duque, Matheus Caldas
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+ALUNO: Tabela que armazena as informações do aluno.
+	id: campo chave primária da tabela ALUNO;
+	cpf: campo que armazena o Cadastro de Pessoa Física dos alunos;
+	matricula: campo que armazena a matrícula dos alunos;
+	nome: campo que armazena o nome completo dos alunos;
+	status: campo que armazena a informação que diz se o aluno está ou não empregado;
+	FK_AGENTE_id: campo que armazena a chave estrangeira do relacionamento com o agente integrador;
+	FK_EMPRESA_id: campo que armazena a chave estrangeira do relacionamento com uma empresa.
+	FK_ORIENTADOR_id: campo que armazena a chave estrangeira do relacionamento com um orientador;
+EMPRESA: Tabela que armazena as informações das empresas.
+	id: chave primária da tabela EMPRESA;
+	cnpj: campo que armazena o Cadastro Nacional de Pessoa Jurídica da empresa;
+	nome: campo que armazena o nome da empresa.
+
+AGENTE: Tabela que armazena as informações dos agentes de integração.
+	id: chave primária da tabela AGENTE;
+	nome: campo que armazena o nome do agente de integração;
+	cpf: campo que armazena o Cadastro de Pessoa Física do agente de integração;
+	FK_EMPRESA_id: campo que armazena a chave estrangeira do relacionamento com uma empresa.
+
+ORIENTADOR: Tabela que armazena as informações dos orientadores.
+	id: chave primária da tabela ORIENTADOR;
+	nome: campo que armazena o nome do orientador;
+	cpf: campo que armazena o Cadastro de Pessoa Física do orientador;
+	matrícula: campo que armazena a matrícula do orientador;
+
+CHAMADO: tabela que armazena as informações do chamado aberto pelo aluno.
+	id: chave primária da tabela CHAMADO;
+	desc: campo que armazena as informações preenchidas pelo aluno;
+	status: campo que armazena o estado de aprovação ou reprovação do chamado;
+	FK_ALUNO_id: campo que armazena a chave estrangeira do relacionamento com o aluno;
+	FK_SERVIDOR_id: campo que armazena a chave estrangeira do relacionamento com o servidor;
+
+SERVIDOR: tabela que armazena as informações do SERVIDOR.
+	id: chave primária da tabela SERVIDOR;
+	cpf: campo que armazena o Cadastro de Pessoa Física do servidor;
+	nome: campo que armazena o nome do servidor;
+	matrícula: campo que armazena a matrícula do servidor.
+
 
 ># Marco de Entrega 01: Do item 1 até o item 5.2 (5 PTS) <br> 
 
@@ -66,16 +89,110 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
         (não serão aceitos modelos que não estejam em conformidade)
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas em SQL/DDL 
-        (criação de tabelas, alterações, etc..) 
+        
+DROP TABLE IF EXISTS ALUNO;
+CREATE TABLE ALUNO (
+    id int PRIMARY KEY,
+    cpf varchar(150),
+    matricula varchar(150),
+    nome varchar(150),
+    status varchar(150),
+    FK_AGENTE_id int,
+    FK_EMPRESA_id int,
+    FK_ORIENTADOR_id int
+);
+DROP TABLE IF EXISTS EMPRESA;
+CREATE TABLE EMPRESA (
+    id int PRIMARY KEY,
+    cnpj varchar(150),
+    nome varchar(150)
+);
+
+DROP TABLE IF EXISTS AGENTE;
+CREATE TABLE AGENTE (
+    id int PRIMARY KEY,
+    nome varchar(150),
+    cpf varchar(150),
+    FK_EMPRESA_id int
+);
+
+DROP TABLE IF EXISTS CHAMADO;
+CREATE TABLE CHAMADO (
+    id int PRIMARY KEY,
+    desc varchar(150),
+    status varchar(150),
+    dt_abertura timestamp,
+    dt_fechamento timestamp,
+    FK_ALUNO_id int,
+    FK_SERVIDOR_id int
+);
+
+DROP TABLE IF EXISTS SERVIDOR;
+CREATE TABLE SERVIDOR (
+    cpf varchar(150),
+    id int PRIMARY KEY,
+    nome varchar(150),
+    matricula varchar(150)
+);
+
+DROP TABLE IF EXISTS ORIENTADOR;
+CREATE TABLE ORIENTADOR (
+    matricula varchar(150),
+    cpf varchar(150),
+    id int PRIMARY KEY,
+    nome varchar(150)
+);
+ 
+ALTER TABLE ALUNO ADD CONSTRAINT FK_ALUNO_1
+    FOREIGN KEY (FK_AGENTE_id)
+    REFERENCES AGENTE (id)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE ALUNO ADD CONSTRAINT FK_ALUNO_2
+    FOREIGN KEY (FK_EMPRESA_id)
+    REFERENCES EMPRESA (id)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE ALUNO ADD CONSTRAINT FK_ALUNO_3
+    FOREIGN KEY (FK_ORIENTADOR_id)
+    REFERENCES ORIENTADOR (id)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE AGENTE ADD CONSTRAINT FK_AGENTE_1
+    FOREIGN KEY (FK_EMPRESA_id)
+    REFERENCES EMPRESA (id)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE CHAMADO ADD CONSTRAINT FK_CHAMADO_1
+    FOREIGN KEY (FK_ALUNO_id)
+    REFERENCES ALUNO (id)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE CHAMADO ADD CONSTRAINT FK_CHAMADO_2
+    FOREIGN KEY (FK_SERVIDOR_id)
+    REFERENCES SERVIDOR (id)
+    ON DELETE CASCADE;
+
 
       
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        a) Script das instruções relativas a inclusão de dados 
-	Requisito mínimo: (Script dev conter: Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        OBS
-	1) Criar um novo banco de dados para testar a restauracao (em caso de falha na restauração o grupo não pontuará neste quesito)
-        2) script deve ser incluso no template em um arquivo no formato .SQL
+        -- Inserts para a tabela ALUNO
+INSERT INTO ALUNO (id, cpf, matricula, nome, status, FK_AGENTE_id, FK_EMPRESA_id, FK_ORIENTADOR_id) VALUES (1, '123.456.789-01', '2022001', 'Ana Silva', 'Ativo', 1, 1, 1), (2, '234.567.890-02', '2022002', 'Bruno Costa', 'Ativo', 2, 2, 2), (3, '345.678.901-03', '2022003', 'Carlos Oliveira', 'Inativo', 3, 3, 3), (4, '456.789.012-04', '2022004', 'Daniela Pereira', 'Ativo', 4, 4, 4), (5, '567.890.123-05', '2022005', 'Eduardo Santos', 'Ativo', 5, 5, 5);
+
+	-- Inserts para a tabela EMPRESA
+INSERT INTO EMPRESA (id, cnpj, nome) VALUES (1, '12.345.678/0001-01', 'Empresa A'), (2, '23.456.789/0001-02', 'Empresa B'), (3, '34.567.890/0001-03', 'Empresa C'), (4, '45.678.901/0001-04', 'Empresa D'), (5, '56.789.012/0001-05', 'Empresa E');
+
+	-- Inserts para a tabela AGENTE
+INSERT INTO AGENTE (id, nome, cpf, FK_EMPRESA_id) VALUES (1, 'João Agente', '789.012.345-67', 1), (2, 'Maria Agente', '890.123.456-78', 2), (3, 'Pedro Agente', '901.234.567-89', 3), (4, 'Paula Agente', '012.345.678-90', 4), (5, 'Lucas Agente', '123.456.789-01', 5);
+
+	-- Inserts para a tabela CHAMADO
+INSERT INTO CHAMADO (id, descricao, status, dt_abertura, dt_fechamento, FK_ALUNO_id, FK_SERVIDOR_id) VALUES (1, 'Problema na matrícula', 'Aberto', '2023-07-01 10:00:00', NULL, 1, 1), (2, 'Dúvida sobre estágio', 'Fechado', '2023-07-02 11:00:00', '2023-07-03 12:00:00', 2, 2), (3, 'Solicitação de documentos', 'Aberto', '2023-07-03 12:00:00', NULL, 3, 3), (4, 'Erro no sistema', 'Fechado', '2023-07-04 13:00:00', '2023-07-05 14:00:00', 4, 4), (5, 'Atualização de dados', 'Aberto', '2023-07-05 14:00:00', NULL, 5, 5);
+
+	-- Inserts para a tabela SERVIDOR
+INSERT INTO SERVIDOR (id, cpf, nome, matricula) VALUES (1, '678.901.234-56', 'Servidor 1', 'S001'), (2, '789.012.345-67', 'Servidor 2', 'S002'), (3, '890.123.456-78', 'Servidor 3', 'S003'), (4, '901.234.567-89', 'Servidor 4', 'S004'), (5, '012.345.678-90', 'Servidor 5', 'S005');
+
+	-- Inserts para a tabela ORIENTADOR
+INSERT INTO ORIENTADOR (id, cpf, nome, matricula) VALUES (1, '456.789.012-34', 'Orientador 1', 'O001'), (2, '567.890.123-45', 'Orientador 2', 'O002'), (3, '678.901.234-56', 'Orientador 3', 'O003'), (4, '789.012.345-67', 'Orientador 4', 'O004'), (5, '890.123.456-78', 'Orientador 5', 'O005');
 
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>

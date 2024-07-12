@@ -1,4 +1,4 @@
-![Captura de tela 2024-07-12 232032](https://github.com/user-attachments/assets/aae241cd-b811-44db-b21b-479d41309a7f)# TRABALHO 01:  REC
+# TRABALHO 01:  REC
 Trabalho desenvolvido durante a disciplina de BD1
 
 # Sumário

@@ -1,4 +1,4 @@
-# TRABALHO 01:  REC
+![Captura de tela 2024-07-12 232032](https://github.com/user-attachments/assets/aae241cd-b811-44db-b21b-479d41309a7f)# TRABALHO 01:  REC
 Trabalho desenvolvido durante a disciplina de BD1
 
 # Sumário
@@ -33,8 +33,8 @@ O sistema proposto para a “REC” conterá as informações aqui detalhadas. D
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
-    
+![Alt text](https://github.com/user-attachments/assets/59849f7d-7997-4f5d-9018-c5eeb7f43217 "Modelo Conceitual")
+
     
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: Ana Júlia Caetano, Jéssica Duque, Matheus Caldas
@@ -88,8 +88,10 @@ SERVIDOR: tabela que armazena as informações do SERVIDOR.
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
 
+![Alt text](https://github.com/user-attachments/assets/28f341e8-ab3c-4867-9ac1-0053c2a86f98 "Modelo Lógico")
+
 ### 7	MODELO FÍSICO<br>
-        
+      
 DROP TABLE IF EXISTS ALUNO;
 CREATE TABLE ALUNO (
     id int PRIMARY KEY,

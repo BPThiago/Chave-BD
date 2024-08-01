@@ -121,7 +121,7 @@ SERVIDOR: tabela que armazena as informações do SERVIDOR.
 	DROP TABLE IF EXISTS CHAMADO;
 	CREATE TABLE CHAMADO (
 	    id int PRIMARY KEY,
-	    desc varchar(150),
+	    descricao varchar(150),
 	    status varchar(150),
 	    dt_abertura timestamp,
 	    dt_fechamento timestamp,

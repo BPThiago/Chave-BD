@@ -178,65 +178,12 @@ SERVIDOR: tabela que armazena as informações do SERVIDOR.
 
       
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-	-- Inserts para a tabela ALUNO
-	INSERT INTO ALUNO (id, cpf, matricula, nome, status, FK_AGENTE_id, FK_EMPRESA_id, FK_ORIENTADOR_id) VALUES (1, '123.456.789-01', '2022001', 'Ana Silva', 'Ativo', 1, 1, 1), (2, '234.567.890-02', '2022002', 'Bruno Costa', 'Ativo', 2, 2, 2), (3, '345.678.901-03', '2022003', 'Carlos Oliveira', 'Inativo', 3, 3, 3), (4, '456.789.012-04', '2022004', 'Daniela Pereira', 'Ativo', 4, 4, 4), (5, '567.890.123-05', '2022005', 'Eduardo Santos', 'Ativo', 5, 5, 5);
 
-	-- Inserts para a tabela EMPRESA
-	INSERT INTO EMPRESA (id, cnpj, nome) VALUES (1, '12.345.678/0001-01', 'Empresa A'), (2, '23.456.789/0001-02', 'Empresa B'), (3, '34.567.890/0001-03', 'Empresa C'), (4, '45.678.901/0001-04', 'Empresa D'), (5, '56.789.012/0001-05', 'Empresa E');
-
-	-- Inserts para a tabela AGENTE
-	INSERT INTO AGENTE (id, nome, cpf, FK_EMPRESA_id) VALUES (1, 'João Agente', '789.012.345-67', 1), (2, 'Maria Agente', '890.123.456-78', 2), (3, 'Pedro Agente', '901.234.567-89', 3), (4, 'Paula Agente', '012.345.678-90', 4), (5, 'Lucas Agente', '123.456.789-01', 5);
-
-	-- Inserts para a tabela CHAMADO
-	INSERT INTO CHAMADO (id, descricao, status, dt_abertura, dt_fechamento, FK_ALUNO_id, FK_SERVIDOR_id) VALUES (1, 'Problema na matrícula', 'Aberto', '2023-07-01 10:00:00', NULL, 1, 1), (2, 'Dúvida sobre estágio', 'Fechado', '2023-07-02 11:00:00', '2023-07-03 12:00:00', 2, 2), (3, 'Solicitação de documentos', 'Aberto', '2023-07-03 12:00:00', NULL, 3, 3), (4, 'Erro no sistema', 'Fechado', '2023-07-04 13:00:00', '2023-07-05 14:00:00', 4, 4), (5, 'Atualização de dados', 'Aberto', '2023-07-05 14:00:00', NULL, 5, 5);
-
-	-- Inserts para a tabela SERVIDOR
-	INSERT INTO SERVIDOR (id, cpf, nome, matricula) VALUES (1, '678.901.234-56', 'Servidor 1', 'S001'), (2, '789.012.345-67', 'Servidor 2', 'S002'), (3, '890.123.456-78', 'Servidor 3', 'S003'), (4, '901.234.567-89', 'Servidor 4', 'S004'), (5, '012.345.678-90', 'Servidor 5', 'S005');
-
-	-- Inserts para a tabela ORIENTADOR
-	INSERT INTO ORIENTADOR (id, cpf, nome, matricula) VALUES (1, '456.789.012-34', 'Orientador 1', 'O001'), (2, '567.890.123-45', 'Orientador 2', 'O002'), (3, '678.901.234-56', 'Orientador 3', 'O003'), (4, '789.012.345-67', 'Orientador 4', 'O004'), (5, '890.123.456-78', 'Orientador 5', 'O005');
-
+[Arquivo com os inserts desenvolvidos pelo grupo](insert.sql)
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-    OBS: Usa template da disciplina disponibilizado no Colab.<br>
-#### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
-#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
-
-#### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-    a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
-
-#### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
-    a) Criar outras 5 consultas que envolvam like ou ilike
-    b) Criar uma consulta para cada tipo de função data apresentada.
-
-># Marco de Entrega 02: Do item 6. até o item 9.1 (5 PTS) <br>
-
-#### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
-    a) Criar minimo 3 de exclusão
-    b) Criar minimo 3 de atualização
-
-#### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
-    a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
-    b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
-
-#### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
-    a) Criar minimo 2 envolvendo algum tipo de junção
-
-#### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
-    a) Criar minimo 1 de cada tipo
-
-#### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
-        a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
-        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
-
-#### 9.10	SUBCONSULTAS (Mínimo 4)<br>
-     a) Criar minimo 1 envolvendo GROUP BY
-     b) Criar minimo 1 envolvendo algum tipo de junção
-
-># Marco de Entrega 03: Do item 9.2 até o ítem 9.10 (10 PTS)<br>
+[Arquivo com as tabelas e consultas](Consultas.ipynb)	
 
 ### 10 RELATÓRIOS E GRÁFICOS
 

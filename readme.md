@@ -6,7 +6,7 @@ Trabalho desenvolvido durante a disciplina de BD1
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
 Caio Lessa Simão: caiolessa02@gmail.com<br>
-Davidson Santos: email_segundo_componente@dominio.com<br>
+Davidson Santos: davidsonifes@gmail.com<br>
 Marcos Vinicius: email_segundo_componente@dominio.com<br>
 Thiago Borges: thiagoborges980@gmail.com<br>
 

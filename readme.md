@@ -178,8 +178,7 @@ SERVIDOR: tabela que armazena as informações do SERVIDOR.
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
-#### a) Modelo (pecha kucha)<br>
-#### b) Tempo de apresentação 6:40 
+[link da apresentação](https://docs.google.com/presentation/d/1jLz47Qol2sznL1x41Jmib61ksxadoKCqvW2yiubm6Mk/edit?usp=sharing)
 
 ### 12 FORMATACAO NO GIT:<br> 
 https://help.github.com/articles/basic-writing-and-formatting-syntax/

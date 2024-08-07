@@ -7,7 +7,7 @@ Trabalho desenvolvido durante a disciplina de BD1
 Integrantes do grupo<br>
 Caio Lessa Simão: caiolessa02@gmail.com<br>
 Davidson Santos: davidsonifes@gmail.com<br>
-Marcos Vinicius: email_segundo_componente@dominio.com<br>
+Marcos Santos: marcosviniciussouzadossantos19@gmail.com<br>
 Thiago Borges: thiagoborges980@gmail.com<br>
 
 ### 2.MINI-MUNDO<br>
@@ -23,22 +23,14 @@ O sistema proposto para a “REC” conterá as informações aqui detalhadas. D
     Relatório relativo aos alunos e empresas. O resultado deve exibir o nome e matrícula do aluno, junto de informações relativas à empresa que o emprega (Considerar apenas alunos que 
     estão trabalhando).
     
-### 5.MODELO CONCEITUAL<br>
-    A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
-    B) O mínimo de entidades do modelo conceitual pare este trabalho será igual a 3 e o Máximo 5.
-        * informe quais são as 3 principais entidades do sistema em densenvolvimento<br>(se houverem mais de 3 entidades, pense na importância da entidade para o sistema)       
-    C) Principais fluxos de informação/entidades do sistema (mínimo 3). <br>Dica: normalmente estes fluxos estão associados as tabelas que conterão maior quantidade de dados 
-    D) Qualidade e Clareza
-        Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
-        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas (Aplicar os conceitos de normalização abordados).   
+### 5.MODELO CONCEITUAL<br>   
         
 ![Alt text](https://github.com/user-attachments/assets/59849f7d-7997-4f5d-9018-c5eeb7f43217 "Modelo Conceitual")
 
     
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: Ana Júlia Caetano, Jéssica Duque, Matheus Caldas
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    [Grupo02]: Alex Rossoni, João Pedro Pagotto, Sofia de Alcantara, Thiago Carvalho e Wal Candeia
 
 #### 5.2 Descrição dos dados 
 ALUNO: Tabela que armazena as informações do aluno.
@@ -80,13 +72,7 @@ SERVIDOR: tabela que armazena as informações do SERVIDOR.
 	nome: campo que armazena o nome do servidor;
 	matrícula: campo que armazena a matrícula do servidor.
 
-
-># Marco de Entrega 01: Do item 1 até o item 5.2 (5 PTS) <br> 
-
 ### 6	MODELO LÓGICO<br>
-        a) inclusão do esquema lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
 
 ![Alt text](https://github.com/user-attachments/assets/28f341e8-ab3c-4867-9ac1-0053c2a86f98 "Modelo Lógico")
 
@@ -187,23 +173,13 @@ SERVIDOR: tabela que armazena as informações do SERVIDOR.
 
 ### 10 RELATÓRIOS E GRÁFICOS
 
-#### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
-#### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
-#### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
-
+[Arquivo com os relatórios](Relatórios.ipynb)
     
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
 #### a) Modelo (pecha kucha)<br>
 #### b) Tempo de apresentação 6:40 
-
-># Marco de Entrega 04: Itens 10 e 11 (20 PTS) <br>
-<br>
-<br>
-
-
-
 
 ### 12 FORMATACAO NO GIT:<br> 
 https://help.github.com/articles/basic-writing-and-formatting-syntax/

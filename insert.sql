@@ -110,6 +110,26 @@ INSERT INTO ALUNO (id, cpf, matricula, nome, status, FK_AGENTE_id, FK_EMPRESA_id
 (40, '456.321.789-23', '2026990', 'Natan Oliveira', 'Ativo', 4, 4, 9),
 (41, '678.654.321-34', '2027105', 'Olívia Cardoso', 'Ativo', 5, 5, 7),
 (42, '789.321.654-45', '2027220', 'Paulo Santos', 'Inativo', NULL, NULL, NULL);
+(43, '074.478.281-27', '2019105', 'Ana Costa', 'Ativo', 1, 1, 3),
+(44, '123.456.789-00', '2020106', 'Bruno Oliveira', 'Ativo', 4, 2, 5),
+(45, '234.567.890-11', '2021107', 'Carla Souza', 'Ativo', 7, 3, 7),
+(46, '345.678.901-22', '2022108', 'Daniel Costa', 'Inativo', 10, 4, 9),
+(47, '456.789.012-33', '2023109', 'Eduarda Pereira', 'Ativo', 13, 5, 11),
+(48, '567.890.123-44', '2024110', 'Felipe Santos', 'Ativo', 16, 6, 12),
+(49, '678.901.234-55', '2025111', 'Gabriela Lima', 'Inativo', 3, 7, 2),
+(50, '789.012.345-66', '2026112', 'Henrique Almeida', 'Ativo', 6, 8, 4),
+(51, '890.123.456-77', '2027113', 'Isabela Martins', 'Ativo', 9, 9, 6),
+(52, '901.234.567-88', '2028114', 'João Oliveira', 'Ativo', 12, 10, 8),
+(53, '012.345.678-99', '2029115', 'Karine Ferreira', 'Inativo', 15, 11, 10),
+(54, '123.456.789-01', '2030101', 'Lucas Andrade', 'Ativo', 18, 12, 1),
+(55, '234.567.890-12', '2031102', 'Marta Silva', 'Ativo', 2, 13, 3),
+(56, '345.678.901-23', '2032103', 'Nicolas Santos', 'Inativo', 5, 14, 5),
+(57, '456.789.012-34', '2033104', 'Olga Costa', 'Ativo', 8, 15, 7),
+(58, '567.890.123-45', '2034105', 'Paula Ribeiro', 'Ativo', 11, 16, 9),
+(59, '678.901.234-56', '2035106', 'Quintino Campos', 'Inativo', 14, 17, 11),
+(60, '789.012.345-67', '2036107', 'Rafaela Almeida', 'Ativo', 17, 18, 12),
+(61, '890.123.456-78', '2037108', 'Sérgio Almeida', 'Ativo', 6, 19, 2),
+(62, '901.234.567-89', '2038109', 'Tânia Lima', 'Ativo', 9, 20, 4);
 
 -- Inserts para a tabela CHAMADO
 INSERT INTO CHAMADO (id, descricao, status, dt_abertura, dt_fechamento, FK_ALUNO_id, FK_SERVIDOR_id) VALUES

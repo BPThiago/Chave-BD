@@ -179,6 +179,8 @@ SERVIDOR: tabela que armazena as informações do SERVIDOR.
 
 [Link da apresentação](https://docs.google.com/presentation/d/1jLz47Qol2sznL1x41Jmib61ksxadoKCqvW2yiubm6Mk/edit?usp=sharing)
 
+[Link para o vídeo](https://youtu.be/GzRgPS0ee_0)
+
 ### 12 FORMATACAO NO GIT:<br> 
 https://help.github.com/articles/basic-writing-and-formatting-syntax/
 <comentario no git>

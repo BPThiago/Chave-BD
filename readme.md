@@ -169,16 +169,15 @@ SERVIDOR: tabela que armazena as informações do SERVIDOR.
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 
-[Arquivo com as tabelas e consultas](Consultas.ipynb)	
+[Arquivo com as tabelas e consultas](https://colab.research.google.com/drive/1HbZ_55b6-NeqVa7DH3vOY6xSlh6vLgUh?usp=sharing)	
 
 ### 10 RELATÓRIOS E GRÁFICOS
 
-[Arquivo com os relatórios](Relatórios.ipynb)
-    
+[Arquivo com os relatórios](https://colab.research.google.com/drive/1gOWWrDwIf-LRKXgA63gaArECTztyTxDG?usp=sharing)
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
-[link da apresentação](https://docs.google.com/presentation/d/1jLz47Qol2sznL1x41Jmib61ksxadoKCqvW2yiubm6Mk/edit?usp=sharing)
+[Link da apresentação](https://docs.google.com/presentation/d/1jLz47Qol2sznL1x41Jmib61ksxadoKCqvW2yiubm6Mk/edit?usp=sharing)
 
 ### 12 FORMATACAO NO GIT:<br> 
 https://help.github.com/articles/basic-writing-and-formatting-syntax/

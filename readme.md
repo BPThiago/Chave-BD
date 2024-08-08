@@ -1,5 +1,5 @@
 # TRABALHO 01:  REC
-Trabalho desenvolvido durante a disciplina de BD1
+Trabalho desenvolvido durante a disciplina de BD1 voltado para o desenvolvimento de um sistema voltado à Coordenadoria de Relações Institucionais e Extensão Comunitária (REC).
 
 # Sumário
 
@@ -16,12 +16,11 @@ O sistema proposto para a “REC” conterá as informações aqui detalhadas. D
 
 ### 3.PERGUNTAS A SEREM RESPONDIDAS<br>
 #### 3.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    Relatório que mostre os chamados em aberto por dado aluno;
-    Relatório que apresente as empresas que mais contratam estagiários do Campus;
-    Relatório relativo aos orientadores e alunos. O resultado deve exibir o nome do orientador e o nome do aluno supervisado;
-    Relatório que apresente os chamados aprovados no último mês;
-    Relatório relativo aos alunos e empresas. O resultado deve exibir o nome e matrícula do aluno, junto de informações relativas à empresa que o emprega (Considerar apenas alunos que 
-    estão trabalhando).
+    Quantos alunos são atendidos por cada servidor? Qual é a carga de chamados que isso fornece?
+    Quantos alunos são tutelados por cada orientador presente na instituição?
+    Qual é o grau de presença de alunos na atividade de estágio?
+    Qual é o número de alunos presentes em cada empresa parceira?
+    Quanto tempo dura para a finalização de um chamado pelo REC?
     
 ### 5.MODELO CONCEITUAL<br>   
         
@@ -177,7 +176,11 @@ SERVIDOR: tabela que armazena as informações do SERVIDOR.
 
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
+#### SLIDES DA APRESENTAÇÃO
+
 [Link da apresentação](https://docs.google.com/presentation/d/1jLz47Qol2sznL1x41Jmib61ksxadoKCqvW2yiubm6Mk/edit?usp=sharing)
+
+#### VÍDEO PARA APRESENTAÇÃO FINAL - PECHA KUCHA
 
 [Link para o vídeo](https://youtu.be/GzRgPS0ee_0)
 
